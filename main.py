@@ -11,8 +11,8 @@ def get_photos_from_reddit():
     reddit = praw.Reddit(client_id=client_id,
                          client_secret=client_secret,
                          password=password,
-                         user_agent="bruh by /u/haliaven",
-                         username="haliaven")
+                         user_agent="",  # insert your data
+                         username="")  # insert your data 
     return [x.url for x in list(reddit.get('r/hmmm/hot'))]
 
 
